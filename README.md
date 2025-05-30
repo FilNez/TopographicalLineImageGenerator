@@ -4,7 +4,7 @@
 Generator for topographical line images, like: 
 <br><img src="https://github.com/FilNez/TopographicalLineImageGenerator/blob/main/output_examples/example1.png" alt="Output example" width="500" height="250">
 
-Program algorith:
+Program's algorithm:
 1. Create Perlin noise
 2. Normalize Perlin noise and convert it to image
 3. Posterize the image
