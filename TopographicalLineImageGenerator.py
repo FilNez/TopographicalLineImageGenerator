@@ -145,5 +145,30 @@ def create_topographic_line_image(width: int, height: int, background_color: tup
 
 if __name__ == '__main__':
     # example
-    create_topographic_line_image(1920, 1080, line_width=6, background_color=(12, 12, 13, 255),
-                                  line_color=(29, 25, 39, 255), full_save_path="topographic_image.png")
+    create_topographic_line_image(
+        width=1024, height=512,
+        line_width=3,
+        background_color=(123, 123, 133, 255),
+        line_color=(29, 25, 39, 255),
+        full_save_path="output_examples/example1.png"
+    )
+
+    create_topographic_line_image(
+        width=1024, height=512,
+        line_width=3,
+        noise_octaves=2,
+        background_color=(0,0,0,0),
+        line_color=(123, 255, 198, 255),
+        full_save_path="output_examples/example2.png"
+    )
+
+    create_topographic_line_image(
+        width=1024, height=512,
+        line_width=2,
+        noise_octaves=6,
+        noise_persistence=.25,
+        color_levels=8,
+        background_color=(255, 123, 198, 255),
+        line_color=(0, 0, 0, 0),
+        full_save_path="output_examples/example3.png"
+    )
